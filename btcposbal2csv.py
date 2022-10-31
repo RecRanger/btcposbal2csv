@@ -105,7 +105,7 @@ def in_mem(in_args):
         else:
             add_dict[add] = [val, height]
 
-    for key in add_dict.iterkeys():
+    for key in add_dict:
         ll = add_dict[key]
         yield key, ll[0], ll[1]
 
@@ -202,7 +202,7 @@ if __name__ == '__main__':
                 if sat_val == 0:
                     continue
                 w.append(
-                    address + ',' + str(sat_val) + ',' + str(block_height)
+                    address.decode('ascii') + ',' + str(sat_val) + ',' + str(block_height)
                 )
                 c += 1
                 if c == 1000:
