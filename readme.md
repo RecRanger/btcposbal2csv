@@ -1,3 +1,6 @@
+## Forked by xwings
+Upgraded to python3
+
 ## Dump Bitcoin addresses with positive balance
 
 Simple utility to list all bitcoin addresses with positive balance. It works by analysing the current unspent transaction output set (UTXO), aggregating outputs to same addresses together and write them to csv file.
